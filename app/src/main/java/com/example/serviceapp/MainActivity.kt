@@ -1,5 +1,6 @@
 package com.example.serviceapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -10,11 +11,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_start.setOnClickListener{
-            
+            val intentBg = Intent(this, BackgroundMusicService::class.java)
+            startService(intentBg)
         }
 
         btn_stop.setOnClickListener{
-
+            val intentBg = Intent(this, BackgroundMusicService::class.java)
+            stopService(intentBg)
         }
     }
 }
