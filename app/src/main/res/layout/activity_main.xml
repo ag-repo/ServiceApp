@@ -20,6 +20,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="STOP SERVICE"/>
+    <Button
+        android:id="@+id/btn_bindService"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIND SERVICE"/>
+    <Button
+        android:id="@+id/btn_unbindService"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNBIND SERVICE"/>
+    <Button
+        android:id="@+id/btn_useService"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USE SERVICE"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text=""/>
+    <SeekBar
+        android:id="@+id/progress_bar"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

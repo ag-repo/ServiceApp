@@ -21,5 +21,22 @@ class MainActivity : AppCompatActivity() {
             val intentFg = Intent(this, ForegroundMusicService::class.java)
             stopService(intentFg)
         }
+
+        //3 bottoni dopo
+        btn_bindService.setOnClickListener{
+            val intentFg = Intent(this, BoundMusicService::class.java)
+            bindService(intent, servConn, BIND_AUTO_CREATE)
+
+        }
+
+        btn_unbindService.setOnClickListener{
+            val intentFg = Intent(this, BoundMusicService::class.java)
+            stopService(intentFg)
+        }
+
+        btn_useService.setOnClickListener{
+            val intentFg = Intent(this, BoundMusicService::class.java)
+            stopService(intentFg)
+        }
     }
 }

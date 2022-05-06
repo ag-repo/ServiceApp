@@ -21,7 +21,7 @@ class ForegroundMusicService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         player.start()
-
+        /*
         createNotificationChannel()
         //Devo chiamare lo start in foreground
         val notificationIntent = Intent(this, MainActivity::class.java)
@@ -33,6 +33,7 @@ class ForegroundMusicService : Service() {
             .setContentIntent(pendingIntent)
             .build()
         startForeground(1,notification)
+         */
         return super.onStartCommand(intent, flags, startId)
     }
 
