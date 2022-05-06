@@ -11,13 +11,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_start.setOnClickListener{
-            val intentBg = Intent(this, BackgroundMusicService::class.java)
-            startService(intentBg)
+            //val intentBg = Intent(this, BackgroundMusicService::class.java)
+            //startService(intentBg)
+            val intentFg = Intent(this, ForegroundMusicService::class.java)
+            startService(intentFg)
         }
 
         btn_stop.setOnClickListener{
-            val intentBg = Intent(this, BackgroundMusicService::class.java)
-            stopService(intentBg)
+            val intentFg = Intent(this, ForegroundMusicService::class.java)
+            stopService(intentFg)
         }
     }
 }
